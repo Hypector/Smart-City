@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def tourist(request):
-    return HttpResponse("<body> Hello World!! Smart City Tourist page. </body>")
+	return render(request, 'tourist/tourist.html')
    

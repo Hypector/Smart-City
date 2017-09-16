@@ -3,5 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def businessman(request):
-    return HttpResponse("<body> Hello World!! Smart City BUSINESSMAN page. </body>")
-   
+	return render(request, 'businessman/businessman.html')
