@@ -8,13 +8,15 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>SmartCity!</title>
+    <title>Create User</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/static/homepage/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="/static/homepage/css/jumbotron.css" rel="stylesheet">
+    <link href="/static/homepage/css/signin.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -28,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/aboutus/"">About Us<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/homepage/">About Us<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/loginpage/">Log In</a>
@@ -44,41 +46,35 @@
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">SmartCity!</h1>
-        <p>SmartCity is a not for profit that provides information about City of Brisbane for three specific user types, the Business User, Students and Tourists. Information provided is based on the account type that the user creates.
-
-        If you are interested in the people behind the project, please click the See More button below for more information about the people behind the project, and what the purpose is.</p>
-        <p><a class="btn btn-primary btn-lg" href="/aboutus/" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
+    <!-- LOG IN FUNCTIONALITY -->
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Tourist</h2>
-          <p>Basic Explanation of tourist.</p>
-          <p><a class="btn btn-secondary" href="/tourist/" role="button">Tourist &raquo;</a></p>
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading" align="center">Account Creation</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="radio" value="Student"> Student
+          </label>
+          <label>
+            <input type="radio" value="Tourist"> Tourist
+          </label>
+          <label>
+            <input type="radio" value="Business User"> Business User
+          </label>
         </div>
-        <div class="col-md-4">
-          <h2>Student</h2>
-          <p>Basic explanation of student</p>
-          <p><a class="btn btn-secondary" href="/student/" role="button">Student &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Business User</h2>
-          <p>Basic information about Business User.</p>
-          <p><a class="btn btn-secondary" href="/businessman/" role="button">Business User &raquo;</a></p>
-        </div>
-      </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->
 
       <hr>
 
       <footer>
-        <p>&copy; Company 2017</p>
+        <p>&copy; SmartCity 2017</p>
       </footer>
     </div> <!-- /container -->
 
