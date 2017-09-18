@@ -21,5 +21,9 @@ urlpatterns = [
     url(r'^tourist/', include('tourist.urls')),
     url(r'^student/', include('student.urls')),
     url(r'^businessman/', include('businessman.urls')),
+    url(r'^createuser/', include('createuser.urls')),
+    url(r'^loginpage/', include('loginpage.urls')),
+
+
     url(r'^admin/', admin.site.urls),
 ]

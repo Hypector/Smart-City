@@ -81,7 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'SmartCityDB',
-        'USER': 'AdminUser',
+        'USER': 'root',
         'PASSWORD': 'Password01',
         'HOST': 'localhost',
         'PORT': '3306',
