@@ -29,7 +29,7 @@ body {
   background-color: #777;
 }
 .carousel-item > img {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
