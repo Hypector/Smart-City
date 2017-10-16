@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'SmartCity.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'SmartCityDB',
         'USER': 'root',
         'PASSWORD': 'Password01',

@@ -5,3 +5,159 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+#student-header{
+	position: absolute;
+	background-image: url(../img/students.jpg);
+	width: 100%;
+	height: 30rem;
+	top: 0;
+	background-size:cover; 
+}
+#student-header .carousel-caption{
+	top: 12rem;
+	
+}
+#student-header .carousel-caption h1{
+	text-align:center;
+}
+#container-center{
+	margin-top: 26rem;
+	width: 75rem;
+	height: 74rem;
+}
+#University-bottom,#University-top{
+	padding-top: 1rem;
+	border: 1px solid #d1d2d3;
+	width: 22rem;
+	height: 18rem;
+	background-image: url(../img/tourist_05.jpg);
+}
+#lifes-left{
+	margin-top: 2rem;
+	width: 24rem;
+	height: 12rem;
+}
+#lifes-right{
+	margin-left: 4rem;
+	margin-top: 2rem;
+	border: 1px solid #e2c685;
+	width: 36rem;
+	height: 26rem;
+	padding: 2rem;
+	padding-top:6rem;
+	background-image: url(../img/tourist_05.jpg);
+}
+#lifes-right h2{
+	text-align: center;
+}
+#lifes-right p{
+	margin-top: 2rem;
+	letter-spacing: 1px; 
+	word-spacing: 2px; 
+	text-indent: 34px; 
+	text-align: justify; 
+}
+#lefesbto-left{
+	border: 1px solid #e2c685;
+	width: 32rem;
+	margin-top: 2rem;
+	height: 24rem;
+	padding: 2rem;
+	padding-top:6rem;
+	background-image: url(../img/tourist_05.jpg);
+}
+#lefesbto-right{
+	margin-top: 2rem;
+	width: 32rem;
+	height: 24rem;
+}
+#lefesbto-left h2{
+	text-align: center;
+}
+#lefesbto-left p{
+	margin-top: 2rem;
+	letter-spacing: 1px; 
+	word-spacing: 2px; 
+	text-indent: 34px; 
+	text-align: justify;
+}
+.featurette-divider {
+  margin: 5rem 0; 
+}
+
+#tourist-header{
+	position: absolute;
+	width: 100%;
+	height: 26rem;
+	top: 0;
+
+}
+
+#tourist-container{
+	margin-top: 26rem;
+	width: 75rem;
+	height: 60rem;
+}
+#tourist-menu,#tourist-left{
+	padding-top: 6rem;
+	width: 24rem;
+	height: 25rem;
+	background-image: url(../img/tourist_05.jpg);
+}
+#tourist-center{
+	margin-left: 4rem;
+	width: 30rem;
+	height: 12rem;
+}
+#tourist-right{
+	margin-top: 1rem;
+	margin-left: 4rem;
+	width: 30rem;
+	height: 12rem;
+}
+#tourist-left h2{
+	text-align: center;
+}
+#tourist-menu{
+	height: 31rem;
+}
+#tourist-menu,#tourist-left p{
+	margin-top: 1rem;
+	letter-spacing: 1px; 
+	word-spacing: 2px; 
+	text-indent: 34px; 
+	text-align: justify; 
+}
+#tourist-menu h2{
+	text-align: center;
+}
+.tourist-menulist{
+	width: 14rem;
+	height: 14rem;
+	margin-top: 2rem;
+}
+#tourist-city{
+	margin:0;
+	margin-top: 2rem;
+	padding-top: 6rem;
+	width: 24rem;
+	height: 31rem;
+	background-image: url(../img/tourist_05.jpg);
+}
+.tourist-citylist{
+	width: 14rem;
+	height: 14rem;
+	margin-top: 2rem;
+}
+#tourist-city h2{
+	text-align: center;
+}
