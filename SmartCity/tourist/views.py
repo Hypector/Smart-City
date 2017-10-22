@@ -8,4 +8,7 @@ def tourist(request):
 def touristinfo(request):
 	return render(request, 'tourist/touristinfo.html')
 
+def touristinfo(request):
+	return render(request, 'tourist/Attraction.html')
+
    

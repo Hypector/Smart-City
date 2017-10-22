@@ -7,4 +7,8 @@ def student(request):
     
 
 def studentinfo(request):
-	return render(request, 'student/studentinfo.html')
+	return render(request, 'student/studentinfo.html')    
+
+def studentinfo(request):
+	return render(request, 'student/Attraction.html')
+

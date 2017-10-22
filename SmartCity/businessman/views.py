@@ -10,6 +10,9 @@ def businessman(request):
 def businessmaninfo(request):
 	return render(request, 'businessman/businessmaninfo.html')
 
+def businessmaninfo(request):
+	return render(request, 'businessman/Attraction.html')
+
 
 
 
