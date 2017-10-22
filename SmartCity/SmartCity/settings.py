@@ -49,7 +49,13 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.sessions.backends.cache',
+
+
+    'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',  
+
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -88,6 +94,20 @@ DATABASES = {
         'PASSWORD': 'Password01',
         'HOST': 'localhost',
         'PORT': '3306',
+    }
+}
+
+CACHES = {
+    'default': {
+        'CACHE_MIDDLEWARE_ALIAS' : 'SMARTCITYALIAS',
+        'CACHE_MIDDLEWARE_KEY_PREFIX' : 'SMARTCITY',
+
+        'BACKEND':
+        'django.core.cache.backends.db.DatabaseCache',
+            'LOCATION' : 'my_cache_table',
+            'OPTIONS' : {
+                'MAX_ENTRIES' : 1000
+            }
     }
 }
 

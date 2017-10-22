@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 from django.http import HttpResponse
 
 # Create your views here.
@@ -10,4 +11,6 @@ def businessmaninfo(request):
 	return render(request, 'businessman/businessmaninfo.html')
 
 
-	
+
+
+
