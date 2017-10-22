@@ -29,11 +29,17 @@ urlpatterns = [
     url(r'^businessman/', include('businessman.urls')),
     url(r'^businessman/businessmaninfo/', include('businessman.urls')),
 
-
-
     url(r'^createuser/', include('createuser.urls')),
     url(r'^loginpage/', include('loginpage.urls')),
 
 
     url(r'^admin/', admin.site.urls),
-]
+
+    #USER AUTH URLS
+    #url(r'^accounts/login/$', include('views.login_view')),
+    #url(r'^accounts/auth/$', include('views.auth_view')),
+   # url(r'^accounts/logout/$', include('views.logout_view')),
+    #url(r'^accounts/loggedin/$', include('views.loggedin_view')),
+    #url(r'^accounts/invalid/$', include('views.invalid_login_view')),
+
+    ]
