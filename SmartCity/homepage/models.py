@@ -6,10 +6,8 @@ class Attraction(models.Model):
 	StreetName = models.CharField(max_length=30)
 	suburb = models.CharField(max_length=30)
 	areaCode = models.IntegerField()
-	website = models.URLField(max_length=30)
 	attractionType = models.CharField(max_length=30)
-	rating = models.IntegerField()
 
 	def __str__(self):
-		return self.title
+		return self.name
 # Create your models here.
