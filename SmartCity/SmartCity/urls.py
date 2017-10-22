@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     url(r'^homepage/', include('homepage.urls')),
@@ -35,11 +36,7 @@ urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
 
-    #USER AUTH URLS
-    #url(r'^accounts/login/$', include('views.login_view')),
-    #url(r'^accounts/auth/$', include('views.auth_view')),
-   # url(r'^accounts/logout/$', include('views.logout_view')),
-    #url(r'^accounts/loggedin/$', include('views.loggedin_view')),
-    #url(r'^accounts/invalid/$', include('views.invalid_login_view')),
+    url(r'^login/$', auth_views.login, name='login'),
+    url(r'^logout/$', auth_views.logout, name='logout'),
 
     ]
