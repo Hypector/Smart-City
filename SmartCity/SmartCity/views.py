@@ -31,3 +31,6 @@ def post(self, request):
 			if user.is_active:
 				login(request, user)
 				return redirect('businessman:businessmaninfo')
+
+
+	return render(request.self.template_name
