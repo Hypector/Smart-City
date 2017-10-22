@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'student',
     'tourist',
     'homepage',
-    'businessman', 
+    'businessman',
     'loginpage',
     'createuser',
     'aboutus',
