@@ -5,3 +5,6 @@ from django.http import HttpResponse
 def student(request):
     return render(request, 'student/student.html')
     
+
+def studentinfo(request):
+	return render(request, 'student/studentinfo.html')

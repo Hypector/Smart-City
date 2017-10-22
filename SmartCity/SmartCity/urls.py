@@ -19,9 +19,18 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^homepage/', include('homepage.urls')),
     url(r'^aboutus/', include('aboutus.urls')),
+
     url(r'^tourist/', include('tourist.urls')),
+    url(r'^tourist/touristinfo/', include('tourist.urls')),
+
     url(r'^student/', include('student.urls')),
+    url(r'^student/studentinfo/', include('student.urls')),
+
     url(r'^businessman/', include('businessman.urls')),
+    url(r'^businessman/businessmaninfo/', include('businessman.urls')),
+
+
+
     url(r'^createuser/', include('createuser.urls')),
     url(r'^loginpage/', include('loginpage.urls')),
 
