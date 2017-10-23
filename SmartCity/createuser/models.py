@@ -4,7 +4,7 @@ from django.db import models
 class SignUp(models.Model):
 	first_name = models.CharField(max_length=120, null = True, blank = True)
 	last_name = models.CharField(max_length=120, null = True, blank = True)
-	email = models.EmailField()
+	email = models.EmailField(max_length = 120, null = True, blank = True)
 	account_type = models.CharField(max_length = 120, null = True, blank = True)
 
 	def __str__(self):

@@ -2,11 +2,11 @@ from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
-from createuser.forms import SignUpForm
+#from createuser.forms import SignUpForm
 # Create your views here.
 
 
-
+# Create your views here.
 def createuser(request):
 	return render(request, 'createuser/createuser.html')
 
