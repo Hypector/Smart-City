@@ -1,7 +1,0 @@
-Exception: STATUS_ACCESS_VIOLATION at eip=6115F7F3
-eax=311BB240 ebx=004031C3 ecx=00000030 edx=311BB240 esi=00000000 edi=311BB240
-ebp=0061C928 esp=0061C924 program=C:\Users\Aiden\Desktop\SmartCity\C\Insert_into_Attractions.exe, pid 16216, thread main
-cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
-Stack trace:
-Frame     Function  Args
-0061C928  6115F7F3 (311BB240, 0061C9F4, 004031C3, 00000001)
