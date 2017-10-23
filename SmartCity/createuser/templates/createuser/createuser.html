@@ -47,11 +47,11 @@
     </nav>
 
     <div class="container">
-      <h2 class="form-signin-heading" align="center"> Create Account </h2>
+
       <form method = 'POST' class="form-signin">
-        {% csrf_token %} 
-        {{form_as.p}}
-        <label for="username" class="sr-only"> Username </label>
+        <h2 class="form-signin-heading" align="center"> Create Account </h2>
+        {% csrf_token %}
+        <label for="username" class="sr-only"> Username</label>
         <input type="text" id="username" class="form-control" placeholder="Username" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
