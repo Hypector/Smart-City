@@ -3,5 +3,25 @@
 {% extends "student/studentinfo.html" %}
 
 {% block content %}
-<p class="lead">Attraction information will replace this text</p>
+	<p class="lead">The following are places students may find insteresting<br>Services and Food and Drink</p>
+
+	{% if object_list %}
+
+		<ul>
+			{% for post in object_list %}
+				<li>{{ post.name }}</li>
+			{% endfor %}
+		</ul>
+
+	{% else %}
+
+		<p><b>Annerly Library</b> <br>450 Ipswitch Road, Annerly<br>4103</p>
+		<p><b>Banvo Library</b> <br>284 St Vincents Road, Banvo<br>4014</p>
+		<p><b>Ashgrove Library</b> <br>87 Amarina Road, Ashgrove<br>4060</p>
+		<p><b>The Mandarin Star</b> <br>496 Gympie Road, Strathpine<br>4500</p>
+		<p><b>Cupcakes Amour</b> <br>265 Hamilton Road, Chermside<br>4032</p>
+		<p><b>Hog's Australia's Steakhouse</b> <br>115 Redcliffe Parade, Redcliffe<br>4020</p>
+
+	{% endif %}
+
 {% endblock %}

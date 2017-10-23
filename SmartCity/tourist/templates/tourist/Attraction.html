@@ -3,5 +3,29 @@
 {% extends "tourist/touristinfo.html" %}
 
 {% block content %}
-<p class="lead">Attraction information will replace this text</p>
+	<p class="lead">The following are places tourists may find insteresting<br>Stores, Hotels, and Recreation</p>
+
+	{% if object_list %}
+
+		<ul>
+			{% for post in object_list %}
+				<li>{{ post.name }}</li>
+			{% endfor %}
+		</ul>
+
+	{% else %}
+
+		<p><b>What's Your Team</b> <br>89 Redcliffe Parade, Redcliffe<br>4020</p>
+		<p><b>MegaBuy Technology Superstore</b> <br>844 Gympie Road, Chermside<br>4032</p>
+		<p><b>City Beach</b> <br>13 Cavill Ave, Surfers Paradise<br>4217</p>
+		<p><b>AVCS Hotel</b> <br>7 Staghorn Ave, Surfers Paradise<br>4217</p>
+		<p><b>Dayboro Crown Hotel</b> <br>1 Bradley Street, Dayboro<br>4521</p>
+		<p><b>Club Hotel Caboolture</b> <br>16 Matthew Terrace, Caboolture<br>4510</p>
+		<p><b>Laserzone</b> <br>561 Gympie Road, Lawnton<br>4501</p>
+		<p><b>Fat Louies</b> <br>124 Albert Street, Brisbane City<br>4000</p>
+		<p><b>Puzzled Room Escape</b> <br>1177 Logan Road, Holland Park West<br>4121</p>
+
+	{% endif %}
+
 {% endblock %}
+
