@@ -3,5 +3,26 @@
 {% extends "businessman/businessmaninfo.html" %}
 
 {% block content %}
-<p class="lead">Attraction information will replace this text</p>
+	<p class="lead">The following are places businessmen may find insteresting<br> Hotels and Food and Drink</p>
+
+	{% if object_list %}
+
+		<ul>
+			{% for post in object_list %}
+				<li>{{ post.name }}</li>
+			{% endfor %}
+		</ul>
+
+	{% else %}
+
+		<p><b>AVCS Hotel</b> <br>7 Staghorn Ave, Surfers Paradise<br>4217</p>
+		<p><b>Dayboro Crown Hotel</b> <br>1 Bradley Street, Dayboro<br>4521</p>
+		<p><b>Club Hotel Caboolture</b> <br>16 Matthew Terrace, Caboolture<br>4510</p>
+		<p><b>The Mandarin Star</b> <br>496 Gympie Road, Strathpine<br>4500</p>
+		<p><b>Cupcakes Amour</b> <br>265 Hamilton Road, Chermside<br>4032</p>
+		<p><b>Hog's Australia's Steakhouse</b> <br>115 Redcliffe Parade, Redcliffe<br>4020</p>
+
+	{% endif %}
+
 {% endblock %}
+
