@@ -36,7 +36,6 @@ body {
 #lifes-right{
 	margin-left: 4rem;
 	margin-top: 2rem;
-	border: 1px solid #e2c685;
 	width: 36rem;
 	height: 26rem;
 	padding: 2rem;
@@ -53,7 +52,6 @@ body {
 	text-align: justify; 
 }
 #lefesbto-left{
-	border: 1px solid #e2c685;
 	width: 32rem;
 	margin-top: 2rem;
 	height: 18rem;
